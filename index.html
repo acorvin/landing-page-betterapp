@@ -247,22 +247,33 @@
         <h1 class="section-heading">Get in Touch!</h1>
 
         <div class="inputBox">
-          <input type="text" required />
+          <input type="text" name="name" required />
           <label>name</label>
         </div>
 
         <div class="inputBox">
-          <input type="email" required />
+          <input type="email" name="email" required />
           <label>email</label>
         </div>
 
         <div class="inputBox">
-          <input type="number" required />
+          <input
+            type="tel"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            required
+          />
           <label>phone</label>
         </div>
 
         <div class="inputBox">
-          <textarea required name="" id="" cols="30" rows="10"></textarea>
+          <textarea
+            required
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
           <label>message</label>
         </div>
 
